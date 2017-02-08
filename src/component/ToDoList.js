@@ -31,8 +31,10 @@ export default class ToDoList extends Component {
 		console.log('list component: ', this.props.todos);
 		const allToDos = this.buildToDos(this.props.todos);
 		return (
-			<div className="row">
-				{allToDos}
+			<div>
+				<div className="row">
+					{allToDos}
+				</div>
 			</div>
 		);
 	}
